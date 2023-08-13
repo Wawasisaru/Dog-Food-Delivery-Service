@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dog Meal Delivery</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Dog Meal Delivery</h1>
+    <p>Welcome to our dog meal delivery service! We provide a variety of delicious and nutritious meals for your furry
+      friend.</p>
+
+    <div id="zip-code-section">
+      <p>Enter your zip code:</p>
+      <input type="text" id="zip-code-input">
+      <button id="check-zip-code">Check Zip Code</button>
+    </div>
+
+    <div id="allergens-section" style="display: none;">
+      <p>Select any allergens that apply to your dog:</p>
+      <label><input type="checkbox" name="allergens" value="Eggs" class="allergen-checkbox">Eggs</label>
+      <label><input type="checkbox" name="allergens" value="Dairy" class="allergen-checkbox">Dairy</label>
+      <label><input type="checkbox" name="allergens" value="Wheat Gluten" class="allergen-checkbox">Wheat
+        Gluten</label>
+      <label><input type="checkbox" name="allergens" value="Soy" class="allergen-checkbox">Soy</label>
+      <label><input type="checkbox" name="allergens" id="no-allergens-checkbox">No Allergies</label>
+      <button id="continue-allergens">Continue</button>
+    </div>
+
+    <div id="meals-container"></div>
+
+    <!-- The rest of your sections go here -->
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
