@@ -7,7 +7,12 @@ const allergensSection = document.getElementById("allergens-section");
 
 checkZipCodeButton.addEventListener("click", () => {
   const enteredZipCode = zipCodeInput.value;
-  const deliverableZipCodes = ["10001", "10002", "10003"]; // Example deliverable zip codes
+  const deliverableZipCodes = ["001", "002", "003","004","005","006", "007", "008","009",
+  "010","011", "012", "013","014","015","016", "017", "018","019","020","021", "022", "023","024","025",
+  "026", "027", "028","029","030","031", "032", "033","034","035","036", "037", "038","039","040","041", "042", "043","044","045"
+  ,"046", "047", "048","049","050","051", "052", "053","056","057","058", "059", "060","061","062","063", "064", "065","066","067","068", "069", "070","071","072","073", "074", "075","076","077",
+  "078", "080", "081","082","083","084", "085", "086","087","088","089", "090", "091","091","092","093", "094", "095","096","097"
+,"098", "099", "100"]; // Example deliverable zip codes
 
   if (deliverableZipCodes.includes(enteredZipCode)) {
     allergensSection.style.display = "block";
@@ -26,10 +31,11 @@ const proceedToCartButton = document.getElementById("proceed-to-cart");
 // Sample meal data (replace with your data)
 const mealsData = [
   { name: "Turkey and egg bowl", description: "Sautéed organic Turkey, scrambled egg on a bed of rice and root vegetables", allergens: ["Eggs"], price: 200, imageSrc: "https://res.cloudinary.com/dogmqg8to/image/upload/c_scale,w_188/v1675474759/Hakika%20Ecommerce/food_lnnkiz.jpg" },
-  { name: "Berry and egg oatmeal", description: "Organic oats, scrambled egg with blackberries on top", allergens: ["Eggs"] },
-  { name: "Tofu with organic quinoa and root vegetables", allergens: ["Soy"] },
-  { name: "Salmon with organic rice", allergens: [] },
-  { name: "Chicken with organic carrots", allergens: [] }
+  { name: "Berry and egg oatmeal", description: "Organic oats, scrambled egg with blackberries on top", allergens: ["Dairy"], Price:  300, imageSrc:"https://res.cloudinary.com/dogmqg8to/image/upload/c_scale,w_188/v1675474759/Hakika%20Ecommerce/food_lnnkiz.jpg" },
+  { name: "Tofu with organic quinoa and root vegetables", allergens: ["Soy"],Price:  300, imageSrc:"https://res.cloudinary.com/dogmqg8to/image/upload/c_scale,w_188/v1675474759/Hakika%20Ecommerce/food_lnnkiz.jpg"},
+  { name: "Salmon with organic rice", allergens: [], Price:  300, imageSrc:"https://res.cloudinary.com/dogmqg8to/image/upload/c_scale,w_188/v1675474759/Hakika%20Ecommerce/food_lnnkiz.jpg" },
+  { name: "Chicken with organic carrots", allergens: [], Price:  300, imageSrc:"https://res.cloudinary.com/dogmqg8to/image/upload/c_scale,w_188/v1675474759/Hakika%20Ecommerce/food_lnnkiz.jpg"},
+
 ];
 
 // Function to display meals without selected allergens
